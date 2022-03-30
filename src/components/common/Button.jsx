@@ -2,7 +2,7 @@ import Icons from "./Icons";
 
 const Button = ({ hasMarginTop, defaultStyle, defaultBG, title, hasIconLeft, hasIconRight }) => {
     return ( 
-        <div className={`${hasMarginTop ? 'mt-5' : ''}`}>
+        <div className={`${hasMarginTop ? 'mt-8' : ''}`}>
             <button className={
                 `h-max rounded-sm 
                 ${defaultStyle ? 'w-full py-1.5 text-lg text-white font-bold tracking-wider' : ''} 

@@ -1,8 +1,8 @@
 import Icons from "./Icons";
 
-const InputField = ({ type, name, id, labelTitle,  hasIcon }) => {
+const InputField = ({ type, name, id, labelTitle,  hasIcon, responsive }) => {
     return (  
-        <div className='relative w-full h-10 flex items-center border-b border-softGray'>
+        <div className={`relative w-full h-10 flex items-center border-b border-softGray ${responsive ? 'row-start-2 row-span-2' : ''}`}>
             {hasIcon && (
                 <Icons Icon={hasIcon} setHeight='h-6' />
             )}

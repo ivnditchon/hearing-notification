@@ -2,7 +2,7 @@ import Wrapper from './Wrapper';
 import CreateHearingBox from './CreateHearingBox';
 import Topbar from './Topbar';
 import Form from '../common/Form';
-import InputFieldMainWrapper from '../common/InputFieldMainWrapper';
+import InputFieldWrapper from '../common/InputFieldWrapper';
 import InputField from '../common/InputField';
 import Button from '../common/Button';
 
@@ -14,7 +14,7 @@ const CreateHearing = () => {
                     <Topbar />
                     <Form>
                         {/** Date and time container */}
-                        <InputFieldMainWrapper
+                        <InputFieldWrapper
                             hasTitle='Date and time'
                             hasGap
                         >
@@ -29,10 +29,11 @@ const CreateHearing = () => {
                                 name='time'
                                 id='time'
                                 labelTitle='Time'
+                                responsive
                             />
-                        </InputFieldMainWrapper>
+                        </InputFieldWrapper>
                         {/** Client container */}
-                        <InputFieldMainWrapper
+                        <InputFieldWrapper
                             hasTitle='Client details:'
                             hasGap
                             hasMargin
@@ -67,9 +68,9 @@ const CreateHearing = () => {
                                 id='email-address'
                                 labelTitle='Email address (optional)'
                             />
-                        </InputFieldMainWrapper>
+                        </InputFieldWrapper>
                         {/** Assigned lawyer container */}
-                        <InputFieldMainWrapper
+                        <InputFieldWrapper
                             hasTitle='Assigned lawyer:'
                             hasGap
                             hasMargin
@@ -80,9 +81,9 @@ const CreateHearing = () => {
                                 name='assigned lawyer'
                                 labelTitle='Assigned lawyer'
                             />
-                        </InputFieldMainWrapper>
+                        </InputFieldWrapper>
                         {/** Case container */}
-                        <InputFieldMainWrapper
+                        <InputFieldWrapper
                             hasTitle='Case details:'
                             hasGap
                             hasMargin
@@ -105,9 +106,9 @@ const CreateHearing = () => {
                                 id='case-type'
                                 labelTitle='Case type'
                             />
-                        </InputFieldMainWrapper>
+                        </InputFieldWrapper>
                         {/** Court container */}
-                        <InputFieldMainWrapper
+                        <InputFieldWrapper
                             hasTitle='Court details:'
                             hasGap
                             hasMargin
@@ -154,7 +155,7 @@ const CreateHearing = () => {
                                 id='court-country'
                                 labelTitle='Country'
                             />
-                        </InputFieldMainWrapper>
+                        </InputFieldWrapper>
                         <Button 
                             fullWidth 
                             title='CREATE' 
