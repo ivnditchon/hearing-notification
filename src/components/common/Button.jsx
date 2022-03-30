@@ -1,21 +1,19 @@
 import Icons from "./Icons";
 
-const Button = ({ fullWidth, setWrapperStyle, setButtonStyle, defaultBG, title, hasIconLeft, hasIconRight, iconHeight }) => {
+const Button = ({ hasMarginTop, defaultStyle, defaultBG, title, hasIconLeft, hasIconRight }) => {
     return ( 
-        <div className={
-            `${fullWidth ? 'w-full': 'w-auto'} ${setWrapperStyle} h-max`
-        }>
+        <div className={`${hasMarginTop ? 'mt-5' : ''}`}>
             <button className={
-                `w-full h-max rounded-sm 
-                ${setButtonStyle} 
+                `h-max rounded-sm 
+                ${defaultStyle ? 'w-full py-1.5 text-lg text-white font-bold tracking-wider' : ''} 
                 ${defaultBG ? 'bg-gradient-to-r from-softGreen to-darkGreen' : 'bg-white border border-lightGray'}`
             }>
                 {hasIconLeft && (
-                    <Icons Icon={hasIconLeft} setHeight={iconHeight} />
+                    <Icons Icon={hasIconLeft} />
                 )}
                 {title}
                 {hasIconRight && (
-                    <Icons Icon={hasIconRight} setHeight={iconHeight} />
+                    <Icons Icon={hasIconRight} />
                 )}
             </button>
         </div>

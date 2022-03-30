@@ -8,43 +8,49 @@ import InputFieldMainWrapper from '../common/InputFieldMainWrapper';
 import InputFieldWrapper from '../common/InputFieldWrapper';
 import InputField from '../common/InputField';
 import { UserIcon, LockClosedIcon } from '@heroicons/react/solid';
+import LoginWrapper from './LoginWrapper';
+import Hero from '../common/Hero';
 
 const Login = () => {
     return (  
         <>
             <Wrapper>
                 <LoginBox>
-                    <Logo setLogoStyle='h-16' />
-                    <MainText />
-                    <Form>
-                        <InputFieldMainWrapper>
-                            <InputFieldWrapper>
-                                <InputField 
-                                    type='text'
-                                    name='username'
-                                    id='username'
-                                    labelTitle='Username'
-                                    hasIcon={UserIcon}
-                                />
-                            </InputFieldWrapper>
-                        </InputFieldMainWrapper>
-                        <InputFieldMainWrapper>
-                            <InputFieldWrapper>
-                                <InputField 
-                                    type='password'
-                                    name='password'
-                                    labelTitle='Password'
-                                    hasIcon={LockClosedIcon}
-                                />
-                            </InputFieldWrapper>
-                        </InputFieldMainWrapper>
-                        <Button 
-                            fullWidth 
-                            title='LOGIN' 
-                            defaultBG setWrapperStyle='mt-5' 
-                            setButtonStyle='py-1.5 text-lg text-white font-bold tracking-wider' 
-                        />
-                    </Form>
+                    <LoginWrapper>
+                        <Logo setLogoStyle='h-16' />
+                        <MainText />
+                        <Form>
+                            <InputFieldMainWrapper>
+                                <InputFieldWrapper>
+                                    <InputField 
+                                        type='text'
+                                        name='username'
+                                        id='username'
+                                        labelTitle='Username'
+                                        hasIcon={UserIcon}
+                                    />
+                                </InputFieldWrapper>
+                            </InputFieldMainWrapper>
+                            <InputFieldMainWrapper>
+                                <InputFieldWrapper>
+                                    <InputField 
+                                        type='password'
+                                        name='password'
+                                        labelTitle='Password'
+                                        hasIcon={LockClosedIcon}
+                                    />
+                                </InputFieldWrapper>
+                            </InputFieldMainWrapper>
+                            <Button 
+                                fullWidth 
+                                title='LOGIN' 
+                                defaultBG 
+                                hasMarginTop
+                                defaultStyle 
+                            />
+                        </Form>
+                    </LoginWrapper>
+                    <Hero />
                 </LoginBox>
             </Wrapper>
         </>

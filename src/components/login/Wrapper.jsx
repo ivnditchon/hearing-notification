@@ -1,9 +1,10 @@
-const LoginWrapper = ({ children }) => {
+const Wrapper = ({ children }) => {
     return (  
-        <div className="w-full h-screen flex justify-center items-center bg-lightGray">
+        <div className="w-full h-screen flex flex-col justify-center items-center bg-white scroll-smooth landscape:h-max landscape:py-10
+        md:landscape:h-screen xl:bg-lightGray">
             {children}
         </div>
     );
 }
  
-export default LoginWrapper;
+export default Wrapper;

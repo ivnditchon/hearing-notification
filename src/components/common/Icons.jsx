@@ -1,9 +1,9 @@
-const Icons = ({ Icon, setHeight, inline }) => {
+const Icons = ({ Icon, inline }) => {
     return (  
         <>
             <Icon className={
-                `object-contain
-                ${setHeight} ${inline ? 'stroke-darkGreen' : 'fill-darkGreen'}`} 
+                `h-6 object-contain
+                ${inline ? 'stroke-darkGreen' : 'fill-darkGreen'}`} 
             />
         </>
     );

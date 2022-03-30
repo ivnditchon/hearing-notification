@@ -4,7 +4,7 @@ module.exports = {
     ],
     theme: {
         screens: {
-            'xs': '400px',
+            'xs': '375px',
             // => @media (min-width: 400px) { ... }
 
             'sm': '640px',
@@ -30,7 +30,7 @@ module.exports = {
                 'softGreen': '#57A33E',
                 'darkGreen': '#117856',
                 'softGray': '#A5A5A5',
-                'lightGray': '#C8C8C8',
+                'lightGray': '#e8e8e8',
                 'darkGray': '#2E2E2E',
             }
         },
