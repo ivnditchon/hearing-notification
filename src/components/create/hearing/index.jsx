@@ -1,13 +1,13 @@
 import Wrapper from './Wrapper';
-import CreateHearingBox from './CreateHearingBox';
-import Topbar from './Topbar';
-import Form from '../common/Form';
-import InputFieldWrapper from '../common/InputFieldWrapper';
-import InputField from '../common/InputField';
-import Button from '../common/Button';
-import Dropdown from '../common/Dropdown';
+import Box from '../common/Box';
+import Topbar from '../common/Topbar';
+import Form from '../../UI/Form';
+import InputFieldWrapper from '../../UI/InputFieldWrapper';
+import InputField from '../../UI/InputField';
+import Button from '../../UI/Button';
+import Dropdown from '../../UI/Dropdown';
 
-const CreateHearing = () => {
+const Hearing = () => {
     /** Lawyers list */
     const LAWYERS_DETAILS = [
         { 
@@ -35,8 +35,10 @@ const CreateHearing = () => {
     return (  
         <>
             <Wrapper>
-                <CreateHearingBox>
-                    <Topbar />
+                <Box>
+                    <Topbar
+                        title='Create hearing schedule'
+                    />
                     <Form>
                         {/** Date and time container */}
                         <InputFieldWrapper
@@ -87,10 +89,10 @@ const CreateHearing = () => {
                             />
                             <InputField 
                                 type='text'
-                                name='contact-number'
-                                id='contact-number'
+                                name='mobile-number'
+                                id='mobile-number'
                                 hasLabel
-                                labelTitle='Contact number'
+                                labelTitle='Mobile number'
                             />
                             <InputField 
                                 type='text'
@@ -119,10 +121,10 @@ const CreateHearing = () => {
                         >
                             <InputField 
                                 type='text'
-                                name='case-number'
-                                id='case-number'
+                                name='case-folder-number'
+                                id='case-folder-number'
                                 hasLabel
-                                labelTitle='Case number'
+                                labelTitle='Case folder #'
                             />
                             <InputField 
                                 type='text'
@@ -203,10 +205,10 @@ const CreateHearing = () => {
                             defaultStyle
                         />
                     </Form>
-                </CreateHearingBox>
+                </Box>
             </Wrapper>
         </>
     );
 }
  
-export default CreateHearing;
+export default Hearing;

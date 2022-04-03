@@ -1,14 +1,14 @@
 import Wrapper from './Wrapper';
 import LoginBox from './LoginBox';
-import Logo from '../common/Logo';
+import Logo from '../UI/Logo';
 import MainText from './MainText';
-import Button from '../common/Button';
-import Form from '../common/Form';
-import InputFieldWrapper from '../common/InputFieldWrapper';
-import InputField from '../common/InputField';
+import Button from '../UI/Button';
+import Form from '../UI/Form';
+import InputFieldWrapper from '../UI/InputFieldWrapper';
+import InputField from '../UI/InputField';
 import { UserIcon, LockClosedIcon } from '@heroicons/react/solid';
 import LoginWrapper from './LoginWrapper';
-import Hero from '../common/Hero';
+import Hero from '../UI/Hero';
 
 const Login = () => {
     return (  
@@ -24,6 +24,7 @@ const Login = () => {
                                     type='text'
                                     name='username'
                                     id='username'
+                                    hasLabel
                                     labelTitle='Username'
                                     hasIcon={UserIcon}
                                 />
@@ -32,6 +33,7 @@ const Login = () => {
                                 <InputField 
                                     type='password'
                                     name='password'
+                                    hasLabel
                                     labelTitle='Password'
                                     hasIcon={LockClosedIcon}
                                 />

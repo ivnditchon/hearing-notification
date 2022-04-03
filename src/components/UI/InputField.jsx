@@ -1,10 +1,10 @@
 import Icons from "./Icons";
 
-const InputField = ({ type, name, id, labelTitle,  hasIcon, hasLabel, responsive }) => {
+const InputField = ({ type, name, id, labelTitle,  hasIcon, hasLabel }) => {
     return (  
-        <div className={`relative w-full h-10 flex items-center border-b border-softGray ${responsive ? 'row-start-2 row-span-2' : ''}`}>
+        <div className={`relative w-full h-10 flex items-center border-b border-softGray`}>
             {hasIcon && (
-                <Icons Icon={hasIcon} setHeight='h-6' />
+                <Icons Icon={hasIcon} defaultHeight defaultSolidColor />
             )}
             <input type={type} name={name} id={id} className='w-full h-full px-1.5 outline-none text-sm text-darkGray' autoComplete="off" />
             {hasLabel && (

@@ -1,6 +1,6 @@
 const Wrapper = ({ children }) => {
     return (  
-        <div className='w-full h-max flex justify-center items-center rounded-sm xl:bg-lightGray xl:py-10'>
+        <div className='absolute inset-0 flex justify-center items-center w-full h-screen px-5 bg-darkGray bg-opacity-50'>
             {children}
         </div>
     );
